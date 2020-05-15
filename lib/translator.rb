@@ -28,7 +28,7 @@ def get_japanese_emoticon(filepath, emoticon)
   library.find do |key, hash|
   if hash[:english] == emoticon
    return hash[:japanese]
-    #binding.pry 
+    binding.pry 
   end
 end 
 p "Sorry, that emoticon was not found"
