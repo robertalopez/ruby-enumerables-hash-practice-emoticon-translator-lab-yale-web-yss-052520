@@ -1,6 +1,6 @@
 # require modules here
 require 'yaml'
-require 'pry'
+
 
 def load_library(filepath)
   # code goes here
@@ -28,7 +28,6 @@ def get_japanese_emoticon(filepath, emoticon)
   library.find do |key, hash|
   if hash[:english] == emoticon
    return hash[:japanese]
-    #binding.pry 
   end
 end 
 p "Sorry, that emoticon was not found"
